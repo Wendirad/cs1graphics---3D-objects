@@ -224,14 +224,7 @@ class _3DBT(EventHandler):
     def handle(self, event):
         global bt , y , x ,size , _X_
         bt , y , x ,size , _X_= '3D' , True , 1  , 1, threeD
-class _N(EventHandler):   
-    def handle(self, event):
-        print '%-25s  %-30s'%('Name ','ID')
-        print '='*20
-        for i, j in [('Wendirad Demelash', 'UGR/17757/11' ), ('Tefera Abebe' , 'UGR/17896/11')]:
-            print '%-25s  %-30s'%(i,j)
-        print '='*12 
-    
+
         
    
 def Main_menu():
@@ -261,19 +254,10 @@ def Main_menu():
     _2D.addHandler(__2D_)
     _3D.addHandler(__3D_)
 
-    _D = Button('Team Name', Point(500,500))
-    _D.setBorderWidth(3)
-    _D.setBorderColor((0,0,128))
-    _D.setFillColor((0,0,128))
-    _D.setFontColor('white')
-    _D.setFontSize(14)
-    _D.setHeight(70)
-    _D.setWidth(270)
-    _D.addHandler(__D)
     
     MN1B.add(_2D)
     MN1B.add(_3D)
-    MN1B.add(_D)
+
 def BT():
     Next_ = Next()
     Prev_ = Prev()
