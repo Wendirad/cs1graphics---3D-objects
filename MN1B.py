@@ -508,5 +508,5 @@ def Menu():
             _X_ = threeD
             size = len(_X_)
             start()
-        
-Menu()
+if __naem__ == '__main__':
+    Menu()
