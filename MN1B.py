@@ -230,7 +230,6 @@ class _3DBT(EventHandler):
 def Main_menu():
     __2D_ = _2DBT()
     __3D_ = _3DBT()
-    __D = _N()
     MN1B.setTitle('Main Menu')
     setBG()
     _2D = Button('2D', Point(300,300))
@@ -508,5 +507,5 @@ def Menu():
             _X_ = threeD
             size = len(_X_)
             start()
-if __naem__ == '__main__':
+if __name__ == '__main__':
     Menu()
